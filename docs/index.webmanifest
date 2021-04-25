@@ -1,0 +1,21 @@
+{
+  "short_name": "TypeScript",
+  "name": "A TypeScript example page",
+  "description": "A GitHub page build with typescript and webpack.",
+
+  "start_url": "/srh-rvl-typescript/",
+
+  "display": "standalone",
+  "background_color": "#f5f6f7",
+  "theme_color": "#f5f6f7",
+
+  "icons": [{
+    "src": "/srh-rvl-typescript/assets/app-icon.png",
+    "sizes": "144x144",
+    "type": "image/webp"
+  }, {
+    "src": "/srh-rvl-typescript/assets/app-icon-large.png",
+    "sizes": "512x512",
+    "type": "image/webp"
+  }]
+}
