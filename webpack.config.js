@@ -13,6 +13,9 @@ module.exports = {
     contentBasePublicPath: '/srh-rvl-typescript',
     contentBase: './docs',
     hot: true,
+    historyApiFallback: {
+      index: '/srh-rvl-typescript/404.html',
+    },
   },
   performance: {
     hints: false,

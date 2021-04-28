@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no" />
 
     <!-- -->
-    <title>TypeScript Example</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- -->
+
+    <!-- -->
+    <title>TypeScript</title>
     <meta name="description" content="A GitHub page build with typescript and webpack." />
     <!-- -->
 
     <!-- -->
     <link href="/srh-rvl-typescript/index.webmanifest" rel="manifest" />
     <link href="/srh-rvl-typescript/assets/app-icon.png" rel="icon" />
+    <link href="/srh-rvl-typescript/assets/arch-style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- -->
+
+    <!-- -->
+    <script defer="" src="/srh-rvl-typescript/assets/bundle.js"></script>
+    <script defer="">
+      if ('serviceWorker' in navigator) navigator.serviceWorker.register('/srh-rvl-typescript/service-worker.js');
+    </script>
     <!-- -->
 
     <!-- -->
@@ -20,25 +33,19 @@
     <meta property="og:url" content="/srh-rvl-typescript" />
     <meta property="og:description" content="A GitHub page build with typescript and webpack." />
     <!-- -->
-
-    <!-- -->
-    <script>
-      if ('serviceWorker' in navigator) navigator.serviceWorker.register('/srh-rvl-typescript/service-worker.js');
-    </script>
-    <!-- -->
   </head>
 
-  <body>
+  <body class="arch-node role-minimal-scrollbar">
     <!-- -->
-    <form>
-      <p>a: <input id="numA" aria-label="Number A" type="number" /></p>
-      <p>b: <input id="numB" aria-label="Number B" type="number" /></p>
-      <input type="submit" />
-    </form>
+    <a href="#!content" class="arch-node bypass-nav-link">Skip to main content</a>
     <!-- -->
 
     <!-- -->
-    <script src="/srh-rvl-typescript/assets/bundle.js"></script>
+    <arch-github-page>
+      <!-- -->
+
+      <!-- -->
+    </arch-github-page>
     <!-- -->
   </body>
 </html>
