@@ -45,7 +45,7 @@ const updateProfile = (account: string) => {
     resolve();
   });
 };
-
+    
 let account: string = location.hostname.split('.')[0];
 if (['localhost', 'github', '192'].includes(account)) account = 'MiloTheirself';
 
