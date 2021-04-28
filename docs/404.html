@@ -2,15 +2,9 @@
 <html lang="en-NL">
   <head>
     <script>
-      let cur = globalThis.location.pathname;
-      let pah = cur.split('/').filter((s) => s != '');
-
-      if (globalThis.location.href != globalThis.location.origin) {
-        pah.pop();
-        globalThis.location.href = '/' + pah.join('/');
-      } else {
-        globalThis.location.href = '/srh-rvl-typescript/';
-      }
+      const href = escape(globalThis.location.pathname.slice(1, Infinity).split('/').slice(1, Infinity).join('/'));
+      const search = location.search == '' ? `?redirect=${href}` : `${location.search}&redirect=${href}`;
+      globalThis.location.href = `/srh-rvl-typescript/${search}${location.hash}`;
     </script>
   </head>
 

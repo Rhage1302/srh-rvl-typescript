@@ -1,0 +1,133 @@
+html {
+  /** */
+  --font-family: Manrope, sans-serif;
+  --font-size: 18px;
+
+  /** */
+  --typo-scheme: #3e3e3e;
+  --typo-scheme-h2: #384861;
+  --typo-scheme-h3: #5d6c86;
+  --typo-scheme-menu: #242424;
+  --typo-scheme-divider: #d1d1d1;
+  --typo-scheme-link: var(--typo-scheme-copper);
+
+  /** */
+  --arch-scheme-backdrop: #fefeff;
+  --arch-scheme-backdrop-lit: #f4f4f4;
+  --arch-scheme-backdrop-dim: #ebebeb;
+  --arch-scheme-backdrop-drk: #454545;
+
+  /** */
+  --typo-scheme-gray: #606568;
+  --gray: #606568;
+  --gray-lit: #e8eaec;
+
+  --typo-scheme-copper: #e65454;
+  --copper: #e65757;
+  --copper-lit: #f2c3c3;
+
+  --typo-scheme-orange: #ff7513;
+  --orange: #ff7513;
+  --orange-lit: #fccfb0;
+
+  --typo-scheme-yellow: #ffa810;
+  --yellow: #ffa810;
+  --yellow-lit: #fadca9;
+
+  --typo-scheme-green: #64b125;
+  --green: #64b125;
+  --green-lit: #c8e1b5;
+
+  --typo-scheme-teal: #24c180;
+  --teal: #24c180;
+  --teal-lit: #c4ebdc;
+
+  --turquoise-type: #2a8372;
+  --turquoise: #2a8372;
+  --turquoise-lit: #d1e4e0;
+
+  --typo-scheme-indigo: #3f58b5;
+  --indigo: #3f58b5;
+  --indigo-lit: #dbe3ff;
+
+  --typo-scheme-purple: #8c56e6;
+  --purple: #8c56e6;
+  --purple-lit: #e6dafa;
+
+  /** */
+  --arch-header-height: 2.5em;
+  --arch-header-margin-bottom: 0.625em;
+  /* --arch-nav-min-width: 14em; */
+  /* --arch-nav-max-width: 1fr; */
+  /* --arch-toc-min-width: 10em; */
+
+  /** */
+  --arch-margin-top: 2em;
+  --arch-margin-bottom: 2em;
+}
+
+/** */
+body *,
+body {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+
+  background: var(--arch-scheme-backdrop);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-y: overlay;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: var(--typo-scheme);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/** */
+.arch-node.role-minimal-scrollbar::-webkit-scrollbar {
+  width: 15px;
+}
+.arch-node.role-minimal-scrollbar::-webkit-scrollbar-thumb:hover,
+.arch-node.role-minimal-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+  background-clip: content-box !important;
+  border: 4px solid transparent;
+  border-radius: 10px;
+}
+
+/** */
+.arch-node.bypass-nav-link {
+  position: fixed;
+  top: 0.625em;
+  left: 0;
+
+  transform: translateX(-100%);
+  transition: transform 100ms;
+  padding: 0.5em 0.875em;
+
+  line-height: 1.7em;
+  font-size: 1em;
+  font-weight: 500;
+
+  text-decoration: none;
+  color: var(--typo-scheme-link);
+  background: var(--arch-scheme-backdrop);
+  z-index: 20;
+}
+.arch-node.bypass-nav-link:focus {
+  transform: translateX(0.625em);
+  text-decoration: underline;
+}
